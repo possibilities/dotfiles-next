@@ -20,6 +20,13 @@ install_flatpak () {
   sudo ln -sf /var/lib/flatpak/exports/bin/${FLATPAK_NAME} /usr/local/bin/${APP_NAME}
 }
 
+install_flatpak vokoscreen com.github.vkohaupt.vokoscreenNG
+install_flatpak kooha io.github.seadve.Kooha
+install_flatpak footage io.gitlab.adhami3310.Footage
+install_flatpak openshot org.openshot.OpenShot
+install_flatpak vidcutter com.ozmartians.VidCutter
+install_flatpak dropbox com.dropbox.Client
+install_flatpak session network.loki.Session
 install_flatpak keyboard org.cubocore.CoreKeyboard
 install_flatpak flipclock one.alynx.FlipClock
 install_flatpak dbeaver io.dbeaver.DBeaverCommunity
@@ -34,7 +41,7 @@ install_flatpak sqlitebrowser org.sqlitebrowser.sqlitebrowser
 install_flatpak kotatogram io.github.kotatogram
 install_flatpak calculator org.gnome.Calculator
 install_flatpak brave com.brave.Browser
-install_flatpak steam com.valvesoftware.Steam
+#install_flatpak steam com.valvesoftware.Steam
 install_flatpak tor com.github.micahflee.torbrowser-launcher
 install_flatpak whatsapp com.github.eneshecan.WhatsAppForLinux
 install_flatpak peek com.uploadedlobster.peek
