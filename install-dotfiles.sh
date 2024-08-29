@@ -15,6 +15,17 @@ do
   ln -sfT $PWD/$file $HOME/.$file_name
 done
 
+echo "link application files into ~/.local/share/applications"
+
+mkdir -p ${HOME}/.local/share/applications
+
+for file in applications/*
+do
+  file_name=`basename $file`
+  echo "   * $file -> ~/.local/share/applications/$file_name"
+  ln -sfT $PWD/$file $HOME/.local/share/applications/$file_name
+done
+
 echo "link config files into ~/.config"
 
 mkdir -p ${HOME}/.config
