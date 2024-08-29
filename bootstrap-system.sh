@@ -33,6 +33,10 @@ echo "update apt"
 
 sudo apt update
 
+echo "autoremove apt"
+
+sudo apt autoremove --yes
+
 echo "create dirs"
 
 mkdir -p ${HOME}/src
@@ -82,7 +86,7 @@ cd scrcpy
 ./install_release.sh
 
 echo "install rclone"
-curl https://rclone.org/install.sh | sudo bash
+curl https://rclone.org/install.sh | sudo bash | true
 
 echo "install pipx"
 
@@ -128,11 +132,6 @@ sudo usermod -aG docker $USER || true
 echo "install dunst"
 
 sudo apt install --yes dunst libnotify-bin
-
-echo "install sharkvpn"
-
-curl -f https://downloads.surfshark.com/linux/debian-install.sh --output ~/src/surfshark-install.sh
-sh ~/surfshark-install.sh
 
 echo "install nordvpn"
 
