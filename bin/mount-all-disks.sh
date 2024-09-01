@@ -3,7 +3,7 @@
 set -e
 
 device_mount_pairs=(
-  "/dev/sda:/media/briggs"
+  "/dev/by-id/usb-Seagate_BUP_Slim_00000000NAB55K1W-0:0:/media/briggs"
   # "/dev/disk/by-partuuid/XXXXXXXXX:/media/laura"
   "/dev/disk/by-partuuid/290416cf-01:/media/cooper"
   "/dev/disk/by-partuuid/620fd55d-0338-41a2-9f16-229e2ea58d17:/media/bob1"
