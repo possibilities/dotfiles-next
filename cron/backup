@@ -1,0 +1,12 @@
+*/30 * * * * root /home/mike/code/dotfiles/bin/backup.py /media/briggs/telegram/ /media/cooper/telegram/
+
+*/30 * * * * root /home/mike/code/dotfiles/bin/backup.py /media/briggs/code/ /media/cooper/code/
+
+*/30 * * * * root /home/mike/code/dotfiles/bin/backup.py /home/mike/code/ /media/cooper/code-home/
+
+*/30 * * * * root /home/mike/code/dotfiles/bin/backup.py /media/briggs/telegram/ /media/laura/telegram/
+
+*/30 * * * * root /home/mike/code/dotfiles/bin/backup.py /media/briggs/code/ /media/laura/code/
+
+*/30 * * * * root /home/mike/code/dotfiles/bin/backup.py /home/mike/code/ /media/laura/code-home/
+

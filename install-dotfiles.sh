@@ -58,6 +58,17 @@ do
   sudo ln -sfT $PWD/$file /usr/local/bin/$file_name
 done
 
+echo "link cronjobs into /etc/cron.d/"
+
+for file in cron/*
+do
+  file_name=`basename $file`
+  echo "   * $file -> /etc/cron.d/$file_name"
+  sudo ln -sf $PWD/$file /etc/cron.d/$file_name
+  sudo chown root:root /etc/cron.d/$file_name
+  sudo chmod 644 /etc/cron.d/$file_name
+done
+
 #echo "setup vim backup dir"
 #
 #mkdir -p ${HOME}/.vim/backups

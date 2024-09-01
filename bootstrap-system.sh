@@ -56,8 +56,9 @@ sudo apt install --yes \
   imagemagick \
   ffmpeg \
   slop \
-  scrot
-
+  scrot \
+  xdotool \
+  wipe
 
 echo "install scrcpy"
 sudo apt install \
